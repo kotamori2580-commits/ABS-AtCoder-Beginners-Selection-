@@ -1,0 +1,17 @@
+## [問題ID] Shift only
+### 🔗 問題リンク
+https://atcoder.jp/contests/abs/tasks
+
+### 💡 アプローチ・考察
+- binで二進数変換し、松尾の0の数を考える
+
+### 🛠 実装 (Python)
+```python
+n = input()
+a = list(map(int, input().split()))
+ans = float('inf')
+for i in a:
+  ans = min(ans, len(bin(i))-bin(i).rfind('1')-1)
+print(ans)
+
+```
