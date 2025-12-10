@@ -1,0 +1,11 @@
+## [問題ID] Placing Marbels
+### 🔗 問題リンク
+https://atcoder.jp/contests/abs/tasks
+
+### 💡 アプローチ・考察
+- 1の数を数える。単純化して考える。
+
+### 🛠 実装 (Python)
+```python
+print(input().count('1'))
+```
