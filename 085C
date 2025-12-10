@@ -1,0 +1,25 @@
+## [問題ID] Otoshidama
+### 🔗 問題リンク
+https://atcoder.jp/contests/abs/tasks
+
+### 💡 アプローチ・考察
+- zをN-x-yとすることで計算量を減らす
+- foundフラグを使って、found = Trueとなったら抜ける
+
+### 🛠 実装 (Python)
+```python
+N, Y = map(int, input().split())
+found = False
+for x in range(N+1):
+  for y in range(N-x+1):
+    z = N-x-y
+    if 10000*x + 5000*y + 1000*z == Y:
+      print(x, y, z)
+      found = True
+      break
+  if found:
+    break
+  
+if not found:
+  print(-1, -1, -1)
+```
