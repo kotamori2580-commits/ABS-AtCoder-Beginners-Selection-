@@ -6,7 +6,7 @@ ABSで学んだことの記録
 ````
 ## [問題ID] 問題タイトル
 ### 🔗 問題リンク
-https://atcoder.jp/contests/abs/tasks/abc086a_a
+https://atcoder.jp/contests/abs/tasks
 
 ### 💡 アプローチ・考察
 - 入力値 a, b の積が偶数か奇数かを判定する。
