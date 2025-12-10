@@ -1,0 +1,18 @@
+## [問題ID] Card Game for Two
+### 🔗 問題リンク
+https://atcoder.jp/contests/abs/tasks
+
+### 💡 アプローチ・考察
+- 偶奇でリストを分ける
+- リスト内の数字の総和を取る
+
+### 🛠 実装 (Python)
+```python
+n = int(input())
+numbers = list(map(int, input().split()))
+numbers.sort(reverse=True)
+alice_score = sum(numbers[0::2])
+bob_score = sum(numbers[1::2])
+ans = alice_score - bob_score
+print(ans)
+```
