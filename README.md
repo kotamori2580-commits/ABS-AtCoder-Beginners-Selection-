@@ -3,6 +3,7 @@ ABSで学んだことの記録
 <img width="1911" height="1234" alt="image" src="https://github.com/user-attachments/assets/87103dc6-82db-46d5-8c07-037e98e88c20" />
 
 # テンプレ 
+````
 ## [問題ID] 問題タイトル
 ### 🔗 問題リンク
 https://atcoder.jp/contests/abs/tasks/abc086a_a
@@ -19,8 +20,8 @@ if (a * b) % 2 == 0:
     print("Even")
 else:
     print("Odd")
-
-
+```
+````
 
 # このテンプレを使うメリット
 
