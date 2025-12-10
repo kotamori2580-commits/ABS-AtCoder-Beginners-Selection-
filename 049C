@@ -1,0 +1,27 @@
+## [問題ID] 白昼夢
+### 🔗 問題リンク
+https://atcoder.jp/contests/abs/tasks
+
+### 💡 アプローチ・考察
+- 松尾の文字を探すにはendwithを使う
+
+### 🛠 実装 (Python)
+```python
+s = input()
+
+while len(s)>0:
+  if s.endswith("dream"):
+    s = s[:-5]
+  elif s.endswith("dreamer"):
+    s = s[:-7]
+  elif s.endswith("erase"):
+    s = s[:-5]
+  elif s.endswith("eraser"):
+    s = s[:-6]
+  else:
+    print("NO")
+    break
+    
+else:
+  print("YES")
+```
