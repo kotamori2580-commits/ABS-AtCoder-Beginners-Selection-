@@ -1,0 +1,25 @@
+## [問題ID] Traveling
+### 🔗 問題リンク
+https://atcoder.jp/contests/abs/tasks
+
+### 💡 アプローチ・考察
+- 一個前の座標との道のりの差と、時間差を比べる
+- 元に戻るか、を偶奇で判断する
+
+### 🛠 実装 (Python)
+```python
+n = int(input())
+pt, px, py = 0, 0, 0
+for i in range(n):
+  t,x,y = map(int, input().split())
+  dt = t-pt
+  dx = abs(x-px)
+  dy = abs(y-py)
+  if (dx+dy)>dt or (dx+dy+dt)%2:
+    print("No")
+    exit()
+  
+  pt, px, py = t, x, y
+  
+print("Yes")
+```
