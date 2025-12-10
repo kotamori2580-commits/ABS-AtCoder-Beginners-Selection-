@@ -1,0 +1,21 @@
+## [問題ID] Coins
+### 🔗 問題リンク
+https://atcoder.jp/contests/abs/tasks
+
+### 💡 アプローチ・考察
+- if文の条件を完全に満たしたときだけansに1を追加する
+
+### 🛠 実装 (Python)
+```python
+a = int(input())
+b = int(input())
+c = int(input())
+x = int(input())
+ans = 0
+for i in range(a+1):
+  for j in range(b+1):
+    for k in range(c+1):
+      if 500*i + 100*j + 50*k == x:
+        ans += 1
+print(ans)
+```
